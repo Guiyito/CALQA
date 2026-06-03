@@ -109,12 +109,12 @@ All student data has been anonymized: real names and institutional emails have b
 ## Citation
 
 ```bibtex
-@inproceedings{sentoni2025calqa,
+@inproceedings{sentoni2026calqa,
   title     = {Uncovering Learning Patterns in Neural Computing Course:
                a Sequential Analytics Approach Applied to AI Education},
   author    = {Sentoni, Guillermo and Delauro, Mariela},
   booktitle = {55 JAIIO -- Simposio Argentino de Educación en Informática (SAEI)},
-  year      = {2025},
+  year      = {2026},
   address   = {Buenos Aires, Argentina}
 }
 ```

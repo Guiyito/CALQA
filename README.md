@@ -1,8 +1,8 @@
 # CALQA — Uncovering Learning Patterns in Neural Computing Education
 
-> **Sentoni, G. & Delauro, M. (2025)**  
+> **Sentoni, G. & Delauro, M. (2026)**  
 > *Uncovering Learning Patterns in Neural Computing Course: a Sequential Analytics Approach Applied to AI Education*  
-> 55 JAIIO — Simposio Argentino de Educación en Informática (SAEI), 2025.  
+> 55 JAIIO — Simposio Argentino de Educación en Informática (SAEI), 2026.  
 > Universidad Nacional de La Matanza, Buenos Aires, Argentina.
 
 ---

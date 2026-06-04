@@ -1,8 +1,13 @@
 # CALQA — Uncovering Learning Patterns in Neural Computing Education
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20535177.svg)](https://doi.org/10.5281/zenodo.20535177)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+**Reproducibility package accompanying the SAEI/JAIIO 2026 publication.**
+
 > **Sentoni, G. & Delauro, M. (2026)**  
 > *Uncovering Learning Patterns in a Neural Computing Course: a Sequential Analytics Approach Applied to AI Education*  
-> 55 JAIIO — Simposio Argentino de Educación en Informática (SAEI), 2026.  
+> 55th JAIIO — Argentine Symposium on Computer Science Education (SAEI), 2026.  
 > Universidad Nacional de La Matanza, Buenos Aires, Argentina.
 
 ---
@@ -30,8 +35,27 @@ Latent state **Z2 (Regulated Active Learner)** — characterized by active compu
 
 ---
 
-## Repository structure
+## CALQA Pipeline
 
+```mermaid
+flowchart TD
+    A[Moodle Event Logs]
+    B[Semantic FSM v6]
+    C[Learning Trajectories]
+    D[K-Means Clustering]
+    E[Hidden Markov Model]
+    F[Latent Cognitive States Z0-Z3]
+    G[Academic Performance Analysis]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+```
+
+## Repository Structure
 ```
 calqa-learning-trajectories/
 │
@@ -61,6 +85,7 @@ calqa-learning-trajectories/
 git clone https://github.com/Guiyito/CALQA
 cd CALQA
 pip install -r requirements.txt
+Python 3.11 recommended.
 jupyter notebook notebooks/01_FSM_trajectories.ipynb
 ```
 
@@ -88,13 +113,13 @@ The FSM maps each raw Moodle event to one of 7 observable states using semantic 
 
 | State | Description | Key rule |
 |---|---|---|
-| `NAV` | Course navigation | `course: viewed`, `section: viewed` |
-| `REC` | Resource consumption | Videos, PDFs, development pages |
-| `PRACT` | Active computational practice | Context includes `"practica"`, `"python"`, architecture names |
+| `NAV`  | Course navigation | `course: viewed`, `section: viewed` |
+| `REC`  | Resource consumption | Videos, PDFs, development pages |
+| `PRACT`| Active computational practice | Context includes `"practica"`, `"python"`, architecture names |
 | `QUIZ` | Formative quiz interaction | Quiz attempt started/viewed/reviewed |
 | `EVAL` | Summative evaluation | Quiz component + `"submitted the attempt"` |
-| `FB` | Feedback | `"updated the grade"`, grade viewed |
-| `OTHER` | Residual events | Everything else |
+| `FB`   | Feedback | `"updated the grade"`, grade viewed |
+| `OTHER`| Residual events | Everything else |
 
 **PRACT** captures interactions with the CPIAE console (Pyodide-based interactive Python environment), which are the primary vehicle for active learning in the course.
 
@@ -121,22 +146,21 @@ Please cite both the paper and the Zenodo artifact when using this work.
   title     = {Uncovering Learning Patterns in a Neural Computing Course:
                a Sequential Analytics Approach Applied to AI Education},
   author    = {Sentoni, Guillermo and Delauro, Mariela},
-  booktitle = {55 JAIIO -- Simposio Argentino de Educación en Informática (SAEI)},
+  booktitle = {55th JAIIO -- Argentine Symposium on Computer Science Education (SAEI)},
   year      = {2026},
   address   = {Buenos Aires, Argentina}
 }
 ```
 
 ### Reproducibility Package
-
 ```bibtex
-@software{sentoni2026calqa_artifact,
-  author    = {Sentoni, Guillermo and Delauro, Mariela},
-  title     = {CALQA: Reproducibility Package, Dataset and Analysis Pipeline},
-  year      = {2026},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.20535177},
-  url       = {https://doi.org/10.5281/zenodo.20535177}
+@software{Sentoni_CALQA,
+author = {Sentoni, Guillermo and Delauro, Mariela},
+doi = {10.5281/zenodo.20535177},
+license = {MIT},
+title = {{CALQA}},
+url = {https://github.com/Guiyito/CALQA},
+version = {1.0}
 }
 ```
 

@@ -78,14 +78,17 @@ calqa-learning-trajectories/
 ```
 
 ---
+### Requirements
 
-## Quickstart
+- Python 3.11 recommended
+
+
+### Quickstart
 
 ```bash
 git clone https://github.com/Guiyito/CALQA
 cd CALQA
 pip install -r requirements.txt
-Python 3.11 recommended.
 jupyter notebook notebooks/01_FSM_trajectories.ipynb
 ```
 
@@ -95,7 +98,8 @@ Run notebooks **in order** (01 → 06). Each notebook reads from `data/` and wri
 
 ## Reproducibility
 
-All stochastic operations use `random_state=42` (K-Means, HMM, PCA). Running the full pipeline from the anonymized data reproduces the exact values reported in the paper:
+All stochastic operations use `random_state=42` (K-Means, HMM, PCA). The repository corresponds to the frozen release `v1.0` archived in Zenodo under DOI `10.5281/zenodo.20535177`.
+Running the full pipeline from the anonymized data reproduces the exact values reported in the paper:
 
 | Result | Value |
 |---|---|

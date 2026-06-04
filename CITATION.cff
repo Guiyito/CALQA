@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: CALQA
+message: "If you use this repository, please cite it."
+type: software
+
+authors:
+  - family-names: Sentoni
+    given-names: Guillermo
+  - family-names: Delauro
+    given-names: Mariela
+
+version: 1.0
+
+doi: 10.5281/zenodo.20535177
+
+repository-code: https://github.com/Guiyito/CALQA
+
+license: MIT
+
+keywords:
+  - learning analytics
+  - educational data mining
+  - hidden markov models
+  - neural computing
+  - artificial intelligence education
+  - moodle

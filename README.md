@@ -1,7 +1,7 @@
 # CALQA — Uncovering Learning Patterns in Neural Computing Education
 
 > **Sentoni, G. & Delauro, M. (2026)**  
-> *Uncovering Learning Patterns in Neural Computing Course: a Sequential Analytics Approach Applied to AI Education*  
+> *Uncovering Learning Patterns in a Neural Computing Course: a Sequential Analytics Approach Applied to AI Education*  
 > 55 JAIIO — Simposio Argentino de Educación en Informática (SAEI), 2026.  
 > Universidad Nacional de La Matanza, Buenos Aires, Argentina.
 
@@ -108,9 +108,17 @@ All student data has been anonymized: real names and institutional emails have b
 
 ## Citation
 
+This repository accompanies the JAIIO 2026 publication and provides
+the complete reproducibility package, including anonymized datasets,
+analysis notebooks, generated figures, and source code.
+
+Please cite both the paper and the Zenodo artifact when using this work.
+
+### Paper
+
 ```bibtex
 @inproceedings{sentoni2026calqa,
-  title     = {Uncovering Learning Patterns in Neural Computing Course:
+  title     = {Uncovering Learning Patterns in a Neural Computing Course:
                a Sequential Analytics Approach Applied to AI Education},
   author    = {Sentoni, Guillermo and Delauro, Mariela},
   booktitle = {55 JAIIO -- Simposio Argentino de Educación en Informática (SAEI)},
@@ -119,7 +127,18 @@ All student data has been anonymized: real names and institutional emails have b
 }
 ```
 
----
+### Reproducibility Package
+
+```bibtex
+@software{sentoni2026calqa_artifact,
+  author    = {Sentoni, Guillermo and Delauro, Mariela},
+  title     = {CALQA: Reproducibility Package, Dataset and Analysis Pipeline},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.20535177},
+  url       = {https://doi.org/10.5281/zenodo.20535177}
+}
+```
 
 ## License
 
